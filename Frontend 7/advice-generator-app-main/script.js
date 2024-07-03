@@ -8,8 +8,8 @@ myBtn.addEventListener('click', function(){
         return response.json();
     }).then(adviceData => {
         const quote = adviceData.slip;
-        adviceNum.innerHTML = `<p>ADVICE # ${quote.id}</p>`
-        adviceText.innerHTML = `<p>"${quote.advice}"</p>`
+        adviceNum.innerHTML = `<p>ADVICE # ${quote.id}</p>`;
+        adviceText.innerHTML = `<p>"${quote.advice}"</p>`;
     }).catch(error => {
         console.error(error)
     })
